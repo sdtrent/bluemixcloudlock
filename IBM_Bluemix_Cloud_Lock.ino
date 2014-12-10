@@ -1,8 +1,3 @@
-/*  IBM IoT Design Challeng Entry 12-8-14
-    based on "arudinoyun" by Kyle Brown
-    https://hub.jazz.net/git/brownkyl/arduinoyun
-*/
-
 /*
  MQTT IOT Example
  - continuously obtains values from the Virtuabotix DHT11 temperature/humidity sensor
@@ -12,12 +7,12 @@
  */
 
 /* Shane Trent - modified to disable DHT11 and use an LM35 temperature sensor
- - want to open a solienod lock on command from IBM IoT service
+ - want to open a solenoid lock on command from IBM IoT service
  - PWM lock to hold open for (90 seconds)
  - monitor vibration(sound) to ensure lock opened and closed
  - can test lock by verifying a toggle when user leaves space 
- - monitoring vibration to determine mimium PWM for pull-in and hold
- - report these values to cloud for maintanance
+ - monitoring vibration to determine minimum PWM for pull-in and hold
+ - report these values to cloud for maintenance
  - report lock jam and report if jam was cleared with X of Ymax cycles
  - log access to database
 */
