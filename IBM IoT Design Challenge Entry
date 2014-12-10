@@ -5,31 +5,41 @@ Team name:  The Observers
 Team members:  LaVern, Gunes, Mike and Shane             
 
 The Challenge
-The problem to solve is how to provide convenient electronic lock control for member of the Raleigh MakerSpace. The Raleigh MakerSpace has a workspace with a CNC milling machine and Laser Cutter that can be used by members on an as needed basis. The most convenient access is via an industrial overhead door with an electronic solenoid lock currently access via individual RF keyfob transmitters.
+The problem to solve is how to provide convenient electronic lock control for members of the Raleigh MakerSpace. 
+The Raleigh MakerSpace has a workspace with a CNC milling machine and Laser Cutter that can be used by members 
+on an as needed basis. The most convenient access is via an industrial overhead door with an electronic solenoid 
+lock 
+currently access via individual RF keyfob transmitters.
 
-The current RF keyfob approach has several limitations including, requiring a new fob for each member, the lock must be trained to recognize each fob and the lock supports a limited number of fobs.
+The current RF keyfob approach has several limitations including, requiring a new fob for each member, the lock
+must be trained to recognize each fob and the lock supports a limited number of fobs.
 
 The Solution
-The proposed solution requires the interoperation of three components, a smart phone to send an unlock request, a cloud 
-service to receive and process the request and network connected hardware controller that can control the lock. 
+The proposed solution requires the interoperation of three components, a smart phone to send an unlock request, 
+a cloud service to receive and process the request and network connected hardware controller that can control the lock. 
 
-The rapid prototyping tools in Bluemix allowed us to quickly build a proof-of-concept solution that allows members to unlock 
-the door using any smartphone that can send e-mail. This project was built by modifying existing IBM example flows in Node-RED and existing source code examples on the Arduino Yun. 
+The rapid prototyping tools in Bluemix allowed us to quickly build a proof-of-concept solution that allows members
+to unlock the door using any smartphone that can send e-mail. This project was built by modifying existing IBM example 
+flows in Node-RED and existing source code examples on the Arduino Yun. 
 
-A member can unlock the door by sending an e-mail containing their Access Code to bluemixcloudlock@gmail com. A Node-RED flow
-on Bluemix monitors the incoming e-mail address for the presence of the Access Code. Once a valid Access Code is received, the Node-RED flow uses the IBM IoT Service to send a message to an Arduino Yun to unlock the door.  
+A member can unlock the door by sending an e-mail containing their Access Code to bluemixcloudlock@gmail com. A 
+Node-RED flow on Bluemix monitors the incoming e-mail address for the presence of the Access Code. Once a valid 
+Access Code is received, the Node-RED flow uses the IBM IoT Service to send a message to an Arduino Yun to unlock the door.  
 
-This solution is superior to the previous RF key fobs because new members do not need a RF key fob, only an Access Code. The 
-lock does not need to be trained to recognize each RF Keyfob. Access is no longer limited by the number of RF key fobs that 
-can be remembered by the lock. In addition, the new system allows the facility to disable a user’s Access Code without 
-requiring keys to be track down and returned. 
+This solution is superior to the previous RF key fobs because new members do not need a RF key fob, only an Access 
+Code. The lock does not need to be trained to recognize each RF Keyfob. Access is no longer limited by the number 
+of RF key fobs that can be remembered by the lock. In addition, the new system allows the facility to disable a 
+user’s Access Code without requiring keys to be track down and returned. 
 
 Future Work
-We plan to continue development on the project to add features that we believe will provide additional value. We want to store access requests in a database to allow analysis of utilization of the space. We plan to install a Smart Bluetooth Beacon and a dedicated smartphone app that will allow access request only when made within proximity to the facility (while retaining the ability for management to provide remote lock control). 
+We plan to continue development on the project to add features that we believe will provide additional value. We want
+to store access requests in a database to allow analysis of utilization of the space. We plan to install a Smart 
+Bluetooth Beacon and a dedicated smartphone app that will allow access request only when made within proximity to 
+the facility (while retaining the ability for management to provide remote lock control). 
 
-Additional enhancements may include  a PWM sequence that wil hold the solenoid lock open longer without overheating to allow 
-more time to open the large overhead door and a notification option to provide an SMS message when any user or a specific 
-user access the the space.
+Additional enhancements may include  a PWM sequence that wil hold the solenoid lock open longer without overheating 
+to allow more time to open the large overhead door and a notification option to provide an SMS message when any 
+user or a specific user access the the space.
 
 
 Thank you,
