@@ -1,3 +1,8 @@
+/*  IBM IoT Design Challeng Entry 12-8-14
+    based on "arudinoyun" by Kyle Brown
+    https://hub.jazz.net/git/brownkyl/arduinoyun
+*/
+
 /*
  MQTT IOT Example
  - continuously obtains values from the Virtuabotix DHT11 temperature/humidity sensor
