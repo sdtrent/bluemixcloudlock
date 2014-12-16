@@ -1,6 +1,6 @@
 This project combines a Node-RED application on Bluemix using the IBM IoT Service with an Arduino Yun to allow the actuation of a solenoid controlled lock.
 
-The incoming e-mail node in Node-RED reads e-mail coming to the account bluemixclouldlock@gmail.com (change to your
+The incoming e-mail node in Node-RED reads e-mail coming to the account user@gmail.com (change to your
 desired account). A switch node searched the incoming e-mail for an Access Code (change the Access Code and optionally
 add more Access Codes).
 
